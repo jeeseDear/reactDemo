@@ -1,0 +1,2 @@
+export const HEADER_CITY = 'HEADER_CITY'
+export const FAILUER_CITY = 'FAILUER_CITY'

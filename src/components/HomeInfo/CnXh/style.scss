@@ -1,0 +1,116 @@
+.cnxh{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: #eee;
+  padding-top: 12px;
+  .cnxh-content{
+    background: #fff;
+    padding-left:16px;
+  }
+  .cnxh-title{
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    color:#777;
+  }
+  .cnxh-wrapper{
+    display: flex;
+    .icon{
+      width: 90px;
+      height: 90px;
+      position: relative;
+      .tag{
+        position: absolute;
+        top:0px;
+        left:0px;
+        padding:5px 8px;
+        background: #000;
+        span{
+          color: #e5bf86;
+          font-size: 14px;
+        }
+      }
+      img{
+        width:100%;
+        height: 100%;
+      }
+    }
+    .text{
+      flex: 1;
+      width: calc(100% - 90px);
+      padding-left: 10px;
+      margin-bottom: 10px;
+      >div{
+        margin-bottom: 12px;
+      }
+      .name{
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      .discount{
+        color:#777;
+        font-size: 12px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      .money{
+        display: flex;
+        position: relative;
+        .deal-price{
+          font-size: 13px;
+          text-decoration: line-through;
+          color:#777;
+          padding-left: 3px;
+          position: relative;
+          top:6px;
+        }
+        .market-price{
+          color:#f63;
+          font-weight: bold;
+          font-size: 21px;
+        }
+        .promovalue{
+          font-size: 10px;
+          font-weight: bold;
+          color:#ff6d3d;
+          position: relative;
+          top:0px;
+          max-width: 75px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          border: 1px solid #ffbda7;
+          padding:4px 2px;
+          margin:0px 17px 0px 13px;
+        }
+        .promovalue-none{
+          font-size: 12px;
+          font-weight: bold;
+          color:#ff6d3d;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          margin:0px 17px 0px 13px;
+        }
+        .sales{
+          flex: 1;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          text-align: right;
+          font-size: 13px;
+          color: #777;
+          height: 24px;
+          line-height: 24px;
+          text-align: right;
+          padding-right: 13px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.ad-item{
+  display: flex;
+  height: 100%;
+  .text{
+    flex:1;
+    font-weight: 700;
+    padding-left:15px;
+    padding-right: 15px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .icon{
+    flex:46px 0 0;
+    position: relative;
+    img{
+      width:46px;
+      height: 46px;
+    }
+    p{
+      position: absolute;
+      right:5px;
+      bottom: 15px;
+      display: block;
+      width:20px;
+      height: 20px;
+      background: #644206;
+      border-radius: 50%;
+      color:#fff;
+      font-size: 12px;
+      text-align: center;
+      i{
+        position: relative;
+        top:3px;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.speical-food{
+  padding-top: 12px;
+  background: #eee;
+}
+.special-item{
+  padding:0px 13px 0px 20px;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  background: #fff;
+  .item{
+    flex:1;
+    display: flex;
+    .text{
+      flex:1;
+      text-align: center;
+      h2{
+        font-size: 15px;
+      }
+      h3{
+        font-size: 13px;
+        margin-top: 10px;
+        color: #b1b1b1;
+      }
+    }
+    .icon{
+      flex:57px 0px 0px;
+      img{
+        width:57px;
+        height:57px;
+        border-radius: 50%;
+      }
+    }
+  }
+ a{
+  &:nth-child(1){
+    h2{
+      color:#74c1e5;
+    }
+  }
+  &:nth-child(2){
+    h2{
+      color: #ff886f;
+    }
+  }
+ } 
+}

@@ -1,0 +1,104 @@
+@import "../../common/sass/variable";
+.city-list {
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 999999;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  .header {
+    height: 46px;
+    position: relative;
+    @include onePix("#e3e3e4");
+    .text {
+      text-align: center;
+      line-height: 46px;
+    }
+  }
+  .header .back {
+    display: inline-block;
+    position: absolute;
+    left: 12px;
+    top: 13px;
+    border: 2px solid #f63;
+    width: 12px;
+    height: 12px;
+    border-top: none;
+    border-right: none;
+    transform: rotate(45deg)
+  }
+  .search {
+    height: 50px;
+    background: #f2f2f2;
+    position: relative;
+    .search-input {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 9px;
+      width: calc(100% - 58px);
+      height: 32px;
+      line-height: 32px;
+      font-size: 14px;
+      color: #999;
+      background: #fff;
+      border-radius: 50px;
+      border: none;
+      text-align: center;
+    }
+  }
+  .loaction {
+    height: 51px;
+    line-height: 51px;
+    position: relative;
+    text-align: center;
+    @include onePix("#e1e1e1");
+    a {
+      color: #000;
+      font-size: 13px;
+    }
+  }
+  .list-content {
+    .city-nav {
+      .name {
+        height: 30px;
+        line-height: 30px;
+        padding-left: 10px;
+        color: #000;
+        font-size: 14px;
+        font-weight: bold;
+        background: #f2f2f2;
+        border-bottom: 1px solid #e2e2e2;
+      }
+      .item {
+        width: 100%;
+        li {
+          display: inline-block;
+          vertical-align: top;
+          box-sizing: border-box;
+          width: 33.33%;
+          height: 48px;
+          line-height: 48px;
+          text-align: center;
+          border-bottom: 1px solid #e2e2e2;
+          border-right: 1px solid #e2e2e2;
+          &:nth-child(3n) {
+            border-right: none;
+          }
+          a {
+            font-size: 16px;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+  .loading {
+    text-align: center;
+  }
+}

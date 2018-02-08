@@ -1,0 +1,168 @@
+@import "../../common/sass/variable";
+.city{
+  box-sizing: border-box;
+  position: absolute;
+  z-index:999999;
+  left:0;
+  right: 0;
+  top:0;
+  bottom: 0;
+  background: #fff;
+  .city-header{
+    height: 46px;
+    position: relative;
+    @include onePix("#e3e3e4");
+   .list-type{
+     width: 200px;
+     height: 30px;
+     border-radius: 5px;
+     border: 1px solid #f63;
+     position: absolute;
+     left:50%;
+     top:50%;
+     transform: translate3d(-50%,-50%,0);
+     display: flex;
+     align-items: center;
+     a{
+       flex: 1;
+       height: 100%;
+       text-align: center;
+       line-height: 30px;
+       color:#f63;
+       &.active{
+        background: #f63;
+        color:#fff;
+       }
+     }
+
+   }
+  }
+  .city-header .back{
+    display: inline-block;
+    position: relative;
+    left:12px;
+    top:13px;
+    border: 2px solid #f63;
+    width:12px;
+    height: 12px;
+    border-top: none;
+    border-right: none;
+    transform: rotate(45deg)
+  }
+  .search{
+    height: 50px;
+    background: #f2f2f2;
+    position: relative;
+    .search-input{
+      position: absolute;
+      left:50%;
+      transform: translateX(-50%);
+      top:9px;
+      width: calc(100% - 58px);
+      height: 32px;
+      line-height: 32px;
+      font-size: 14px;
+      color: #999;
+      background: #fff;
+      border-radius: 50px;
+      border:none;
+      text-align: center;
+    }
+  }
+  .loaction{
+    height: 51px;
+    line-height: 51px;
+    position: relative;
+    text-align: center;
+    @include onePix("#e1e1e1");
+    a{
+      color: #000;
+      font-size: 13px;
+    }
+  }
+  .list-content{
+    .hot-city,.city-nav{
+      .name{
+        height: 30px;
+        line-height: 30px;
+        padding-left: 10px;
+        color: #000;
+        font-size: 14px;
+        font-weight: bold;
+        background: #f2f2f2;
+        border-bottom: 1px solid #e2e2e2;
+      }
+      .item{
+        width: 100%;
+        li{
+          display: inline-block;
+          vertical-align: top;
+          box-sizing: border-box;
+          width: 33.33%;
+          height: 48px;
+          line-height: 48px;
+          text-align: center;
+          border-bottom: 1px solid #e2e2e2;
+          border-right: 1px solid #e2e2e2;
+          &:nth-child(3n){
+            border-right:none;
+          }
+          a{
+            font-size: 16px;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+    .more-city{
+      .name{
+        height: 30px;
+        line-height: 30px;
+        padding-left: 10px;
+        color: #000;
+        font-size: 14px;
+        font-weight: bold;
+        background: #f2f2f2;
+        border-bottom: 1px solid #e2e2e2;
+      }
+      .item{
+        width: 100%;
+        li{
+          display: inline-block;
+          vertical-align: top;
+          box-sizing: border-box;
+          width: 20%;
+          height: 48px;
+          line-height: 48px;
+          text-align: center;
+          border-bottom: 1px solid #e2e2e2;
+          border-right: 1px solid #e2e2e2;
+          &:nth-child(5n){
+            border-right: none;
+          }
+          a{
+            font-size: 16px;
+            display: block;
+          }
+        }
+      }
+    }
+   
+  }
+  .loading{
+    text-align: center;
+  }
+}
+.fade-enter {
+  transform:translate3d(100%,0,0);
+  opacity: 0;
+}
+
+.fade-enter.fade-enter-active {
+  transform:translate3d(0,0,0);
+  opacity: 1;
+  transition: opacity transform 5s ease-in;
+}

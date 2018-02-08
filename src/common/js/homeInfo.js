@@ -1,0 +1,8 @@
+export const RECEIVE_RB = 'RECEIVE_RB'
+export const RECEIVE_XYHZQ = 'RECEIVE_XYHZQ'
+export const RECEIVE_CZTH = 'RECEIVE_CZTH'
+export const RECEIVE_TTLJ = 'RECEIVE_TTLJ'
+export const RECEIVE_CNXH = "RECEIVE_CNXH"
+export const REQUEST_LIKES_MORE = "REQUEST_LIKES_MORE"
+export const GET_LIKES_MORE = "GET_LIKES_MORE"
+export const RECEIVE_MORE = "RECEIVE_MORE"
