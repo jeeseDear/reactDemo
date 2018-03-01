@@ -24,7 +24,6 @@ function withCssTransition(aniname){
       </CSSTransition>
       )
     }
-    
   }
 }
 export default withCssTransition
