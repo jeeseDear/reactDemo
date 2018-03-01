@@ -9,7 +9,6 @@ import JLocation from 'components/City/subPage/JLocation'
 import JMoreCity from 'components/City/subPage/JMoreCity'
 import JSearch from 'components/City/subPage/JSearch'
 import Loading from 'components/Loading'
-import {CSSTransition} from 'react-transition-group'
 import './style.scss'
 class City extends React.Component{
   constructor(props){
@@ -55,10 +54,7 @@ class City extends React.Component{
   }
   render(){
     return (
-     
-      <div className="city">
-       <CSSTransition className="fade" timeout={500} />
-         
+    <div className="city" key ="city">
         <JHeader />
         <JSearch />
         <JLocation />
@@ -69,9 +65,7 @@ class City extends React.Component{
             <JList  city_nav={this.state.list.city_nav} clickCity = {this.clickCity} clickMore = {this.clickMore}/>
           </div>
         }
-      </div>
-    
-      
+    </div>
     )
   }
 }

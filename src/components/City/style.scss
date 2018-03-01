@@ -8,6 +8,7 @@
   top:0;
   bottom: 0;
   background: #fff;
+  height: 100%;
   .city-header{
     height: 46px;
     position: relative;
@@ -155,14 +156,4 @@
   .loading{
     text-align: center;
   }
-}
-.fade-enter {
-  transform:translate3d(100%,0,0);
-  opacity: 0;
-}
-
-.fade-enter.fade-enter-active {
-  transform:translate3d(0,0,0);
-  opacity: 1;
-  transition: opacity transform 5s ease-in;
 }

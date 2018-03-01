@@ -5,7 +5,6 @@ import  City from 'components/City'
 import  CityList from 'components/CityList'
 import ScrollToTop from 'components/ScrollToTop'
 import customHistory from 'router/historyMap'
-
 import './style.scss'
 export default class RouteMap extends React.Component{
   render(){
@@ -13,9 +12,9 @@ export default class RouteMap extends React.Component{
       <Router history = {customHistory}>
           <ScrollToTop >
             <Switch>
-              <Route exact path="/" component = {Home}></Route>
-              <Route path="/city" component = {City}></Route>
-              <Route path="/CityList" component = {CityList}></Route>
+                  <Route exact path='/' component={Home}/>
+                  <Route path='/city' component={City}/>
+                  <Route path='/citylist' component={CityList}/>
             </Switch>
           </ScrollToTop>
       </Router>  
